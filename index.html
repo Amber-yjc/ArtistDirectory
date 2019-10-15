@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Artist Directory</title>
+    <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Raleway&display=swap" rel="stylesheet">
+    <script src="clientSide.js"></script>
+
+</head>
+
+<body onload="getArtists(' ')">
+    <div class="divBorder">
+        <h1>Artist Directory</h1>
+
+        <input class="searchInput" id="searchBtnInput" type="text" placeholder="Search..">
+        <button id="addButton" type="button" onClick="togglePopUp()">Add</button>
+        <button id="searchButton" type="button"
+            onClick="searchArtist(document.getElementById('searchBtnInput').value)">Search</button>
+
+
+    </div>
+    <br />
+
+    <div id='popUp'>
+        <form action="/addArtist" method="POST">
+            <input name='name' class="searchInput" id="artistName" type="text" placeholder="Artist Name">
+            <input name='about' class="searchInput" id="artistAbout" type="text" placeholder="About Artist">
+            <input name='url' class="searchInput" id="artistUrl" type="text" placeholder="Image url"><br />
+            <input id = "addPopButton" type="submit" value="Add"/>
+            <!-- <button id="addPopButton" type="button" -->
+                <!-- onclick="addArtist(document.getElementById('artistName').value,document.getElementById('artistAbout').value,document.getElementById('artistUrl').value)">Add</button> -->
+            <p></p>
+        </form>
+
+    </div>
+    <!-- <div class="parentTableDiv"> -->
+    <div class="tableDiv">
+        <table id="mainTable">
+            <!-- <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/med/women/1.jpg         " width="82" height="86"
+                            title="White flower" alt="Flower">
+                    </td>
+                    <td>
+                        <div class="tdDiv">
+                            <h3>Barot Bellinggam</h3>
+                            <p>Royal Academy of Paintingdddddddddddddddddddddddd</p>
+                        </div>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/med/women/2.jpg         " width="82" height="86"
+                            title="White flower" alt="Flower">
+                    </td>
+                    <td>
+                        <div>
+                            <h3>Conrad Shaw</h3>
+                            <p>Langara</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/med/women/3.jpg         " width="82" height="86"
+                            title="White flower" alt="Flower">
+                    </td>
+                    <td>
+                        <div>
+                            <h3>Layla-Rose Hicks</h3>
+                            <p>UBC</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/med/women/4.jpg         " width="82" height="86"
+                            title="White flower" alt="Flower">
+                    </td>
+                    <td>
+                        <div>
+                            <h3>Maddox Bone</h3>
+                            <p>SFU</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://randomuser.me/api/portraits/med/women/5.jpg         " width="82" height="86"
+                            title="White flower" alt="Flower">
+                    </td>
+                    <td>
+                        <div>
+                            <h3>Barot Bellinggam</h3>
+                            <p>Royal Academy of Painting</p>
+                        </div>
+                    </td>
+                </tr> -->
+        </table>
+    </div>
+    <!-- </div> -->
+
+
+</body>
+
+</html>

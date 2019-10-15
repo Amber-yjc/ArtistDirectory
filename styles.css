@@ -1,0 +1,124 @@
+.divBorder{
+    border-width: 1;
+    border: solid thin;
+    padding: 3%;    
+    border-color: rgb(207, 204, 204);
+    width:40%;
+    display: inline-block;
+    
+}
+
+h1{
+    text-align: left;
+    margin-top: 0;
+    
+}
+body{
+    text-align: center;
+}
+
+
+table { 
+    border-collapse: collapse; 
+    table-layout: fixed;
+    width: 40%;
+    margin-right: 30%;
+    margin-left: 30%;
+
+}
+tr { 
+    border: solid thin; 
+    border-color: grey;
+    width: 100;
+    
+}
+h3{
+    font-family: 'Raleway', sans-serif;
+    margin-top: 0;
+    width: 75%;
+    text-align: left;
+    
+}
+
+p{
+    font-family: 'Open Sans Condensed', sans-serif;
+    width:75%;
+    text-align: left;
+    
+}
+tr:hover { 
+    border: solid thin; 
+    border-color: rgb(207, 204, 204);
+    background-color: rgb(207, 204, 204);
+}
+img{
+    padding-right:20px;
+    
+}
+td {
+    padding-top:20px;
+    padding-bottom:20px;
+    padding-right:20px;   
+    overflow-wrap: break-word;
+  }
+.delTd{
+    width: 15%;
+    margin-left: 0;
+}
+.imgTd{
+    width: 15%;
+}
+.infoTd{
+    width: 30%;
+}
+  
+  td:first-child {
+    padding-left:20px;
+    padding-right:0;
+  }
+
+
+
+.tableDiv{
+    display: inline-block;
+    width: 100%;
+    
+}
+
+button#addButton, button#searchButton{
+    width: 15%;
+    padding: 5px;
+    border: 2px solid white;
+}
+
+
+input.searchInput{
+    width: 63%;
+    margin-left: -5;
+}
+
+#addPopButton{
+    width: 35%;
+    padding: 8px;
+    border: 2px solid white;
+}
+.deleteBtn{
+    background-color: red;
+    color:white;
+    padding: 8px;
+    border-radius: 12px;
+    border: 2px solid red;
+}
+
+input{
+    border: none; /* <-- This thing here */
+    border:solid 1px #ccc;
+    border-radius: 5px;
+    height: 30px;
+}
+
+div#popUp{
+    width:30%;
+    display: inline-block;
+        
+}
